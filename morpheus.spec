@@ -8,13 +8,15 @@ Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
-BuildRequires:	OpenGL-devel
-BuildRequires:	ORBit-devel >= 0.5.0
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.6
 BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	libmorph-devel >= 0.1.2
+BuildRequires:	OpenGL-devel
+BuildRequires:	ORBit-devel >= 0.5.0
 BuildRequires:	zlib-devel
 Requires:	OpenGL
 URL:		http://wine.sexcity.pl/morpheus/
@@ -35,7 +37,11 @@ Studio i LighWave.
 %setup -q
 
 %build
+rm -f missing
 gettextize --copy --force
+aclocal -I macros
+autoconf
+automake -a -c
 %configure \
 	--without-included-gettext 
 %{__make}
