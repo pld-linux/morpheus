@@ -55,7 +55,7 @@ install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps/morpheus/
 	DESTDIR=$RPM_BUILD_ROOT \
 	utildir=%{_applnkdir}/Graphics
 
-install pixmaps/* $RPM_BUILD_ROOT%{_datadir}/pixmaps/morpheus/
+install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
