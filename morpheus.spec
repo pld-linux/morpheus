@@ -41,7 +41,7 @@ make
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps/morpheus/
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	utildir=%{_applnkdir}/Graphics
 
