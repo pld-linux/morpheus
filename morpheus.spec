@@ -2,7 +2,7 @@ Summary:	morpheus
 Summary(pl):	morpheus
 Name:		morpheus
 Version:	0.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Application/Graphics
 Group(pl):	X11/Aplikacje/Grafika
