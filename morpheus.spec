@@ -1,8 +1,8 @@
-Summary:	Morpheus is a mesh (3D model) viewer for GNOME desktop
-Summary(pl):	Morpheus jest przegl±dark± dla projektów 3D
+Summary:	Morpheus - a mesh (3D model) viewer for GNOME desktop
+Summary(pl):	Morpheus - przegl±darka dla projektów 3D
 Name:		morpheus
 Version:	0.3
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://wine.sexcity.pl/%{name}/%{name}-%{version}.tar.gz
@@ -27,18 +27,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Morpheus is a mesh (3D model) viewer for GNOME desktop. It uses OpenGL
-as rendering API.
+as rendering API. It supports 3D Studio and LightWave formats (via
+libmorph).
 
 %description -l pl
+Morpheus to przegl±darka siatek (modeli 3D) dla ¶rodowiska GNOME.
+U¿ywa OpenGL jako API do renderowania. Obs³uguje (poprzez libmorph)
+formaty 3D Studio i LightWave.
+
 Morpheus jest przegl±dark± dla projektów 3D. Posiada support dla 3D
-Studio i LighWave.
+Studio i LightWave.
 
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal} -I macros
@@ -50,13 +54,15 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/pixmaps/morpheus/
+install -d $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	utildir=%{_applnkdir}/Graphics
+	utildir=%{_desktopdir}
 
-install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus/
+install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus
+
+echo 'Categories=Graphics;Viewer;' >> %{_desktopdir}/morpheus.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -65,5 +71,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/morpheus
-%{_applnkdir}/Graphics/morpheus.desktop
-%{_pixmapsdir}/morpheus/*
+%{_desktopdir}/morpheus.desktop
+%{_pixmapsdir}/morpheus
