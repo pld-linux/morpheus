@@ -16,7 +16,7 @@ BuildRequires:	XFree86-devel >= 3.3.5
 BuildRequires:	zlib-devel
 BuildRequires:	gettext-devel
 URL:		http://wine.sexcity.pl/morpheus/
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
