@@ -36,7 +36,7 @@ Studio i LighWave.
 
 %build
 rm -f missing
-gettextize --copy --force
+%{__gettextize}
 aclocal -I macros
 %{__autoconf}
 %{__automake}
