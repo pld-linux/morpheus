@@ -55,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc
 %attr(755,root,root) %{_bindir}/morpheus
 %{_applnkdir}/Graphics/morpheus.desktop
-%{_datadir}/pixmaps/morpheus/*
+%{_pixmapsdir}/morpheus/*
