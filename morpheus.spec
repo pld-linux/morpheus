@@ -6,6 +6,7 @@ Release:	5
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
+# Source0-md5:	23f9af3e8b1ed538fb98a6f686c84dc7
 Patch0:		%{name}-gtkgl.patch
 URL:		http://wine.sexcity.pl/morpheus/
 BuildRequires:	ORBit-devel >= 0.5.0
