@@ -12,8 +12,8 @@ BuildRequires:	Mesa-devel >= 3.0
 BuildRequires:	libmorph-devel >= 0.1.2
 BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	ORBit-devel >= 0.5.0
-BuildRequires:	XFree86-devel >= 3.3.6
-BuildRequires:	xlib-devel
+BuildRequires:	XFree86-devel >= 3.3.5
+BuildRequires:	zlib-devel
 URL:		http://wine.sexcity.pl/morpheus/
 Buildroot:	/tmp/%{name}-%{version}-root
 
