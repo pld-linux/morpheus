@@ -38,8 +38,8 @@ Studio i LighWave.
 rm -f missing
 gettextize --copy --force
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--without-included-gettext
 %{__make}
