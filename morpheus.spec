@@ -12,7 +12,6 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	libmorph-devel >= 0.1.2
 BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	ORBit-devel >= 0.5.0
-BuildRequires:	XFree86-devel >= 3.3.5
 BuildRequires:	zlib-devel
 BuildRequires:	gettext-devel
 URL:		http://wine.sexcity.pl/morpheus/
