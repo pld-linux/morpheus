@@ -1,20 +1,21 @@
-Summary:	morpheus
-Summary(pl):	morpheus
+Summary:	Morpheus is a mesh (3D model) viewer for GNOME desktop
+Summary(pl):	Morpheus jest przegl±dark± dla projektów 3D
 Name:		morpheus
 Version:	0.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications/Graphics
 Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
-BuildRequires:	gtk+-devel >= 1.2.6
 BuildRequires:	OpenGL-devel
-BuildRequires:	libmorph-devel >= 0.1.2
-BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	ORBit-devel >= 0.5.0
-BuildRequires:	zlib-devel
 BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
+BuildRequires:	gtk+-devel >= 1.2.6
+BuildRequires:	gtkglarea-devel >= 1.2.0
+BuildRequires:	libmorph-devel >= 0.1.2
+BuildRequires:	zlib-devel
 URL:		http://wine.sexcity.pl/morpheus/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
