@@ -41,7 +41,7 @@ aclocal -I macros
 autoconf
 automake -a -c
 %configure \
-	--without-included-gettext 
+	--without-included-gettext
 %{__make}
 
 %install
