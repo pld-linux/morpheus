@@ -62,7 +62,7 @@ install -d $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus
 
 install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/morpheus
 
-echo 'Categories=Graphics;Viewer;' >> %{_desktopdir}/morpheus.desktop
+echo 'Categories=Graphics;Viewer;' >> $RPM_BUILD_ROOT%{_desktopdir}/morpheus.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
