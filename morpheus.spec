@@ -23,7 +23,6 @@ Requires:	OpenGL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_noautoreqdep	libGL.so.1 libGLU.so.1
-%define		_prefix		/usr/X11R6
 
 %description
 Morpheus is a mesh (3D model) viewer for GNOME desktop. It uses OpenGL
