@@ -1,0 +1,16 @@
+--- morpheus-0.3/morpheus.desktop~	Fri Nov  5 00:54:39 1999
++++ morpheus-0.3/morpheus.desktop	Wed Jul 14 08:12:44 2004
+@@ -2,8 +2,11 @@
+ Name=Morpheus
+ Name[pl]=Morpheus
+ Comment=Mesh Viewer
+-Comment[pl]=Przegladarka objektów trójwymiarowych
++Comment[pl]=Przegladarka objektÃ³w trÃ³jwymiarowych
+ Exec=morpheus
+ Icon=morpheus/morpheus.png
+-Terminal=0
++Terminal=false
+ Type=Application
++Encoding=UTF-8
++Categories=GTK;GNOME;Graphics;Viewer;
++# vi: encoding=utf-8
