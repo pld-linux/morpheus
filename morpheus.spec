@@ -2,10 +2,12 @@ Summary:	Morpheus is a mesh (3D model) viewer for GNOME desktop
 Summary(pl):	Morpheus jest przegl±dark± dla projektów 3D
 Name:		morpheus
 Version:	0.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications/Graphics
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
+Patch0:		%{name}-gtkgl.patch
+URL:		http://wine.sexcity.pl/morpheus/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -17,7 +19,6 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	ORBit-devel >= 0.5.0
 BuildRequires:	zlib-devel
 Requires:	OpenGL
-URL:		http://wine.sexcity.pl/morpheus/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_noautoreqdep	libGL.so.1 libGLU.so.1
@@ -33,9 +34,11 @@ Studio i LighWave.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
+%{__libtoolize}
 %{__gettextize}
 aclocal -I macros
 %{__autoconf}
@@ -59,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc
+%doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/morpheus
 %{_applnkdir}/Graphics/morpheus.desktop
 %{_pixmapsdir}/morpheus/*
