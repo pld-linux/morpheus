@@ -8,7 +8,7 @@ Group:		X11/Application/Graphics
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel >= 1.2.6
-BuildRequires:	Mesa-devel >= 3.0
+BuildRequires:	OpenGL-devel
 BuildRequires:	libmorph-devel >= 0.1.2
 BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	ORBit-devel >= 0.5.0
