@@ -4,7 +4,7 @@ Name:		morpheus
 Version:	0.3
 Release:	2
 License:	GPL
-Group:		X11/Application/Graphics
+Group:		X11/Applications/Graphics
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel >= 1.2.6
