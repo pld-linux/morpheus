@@ -5,8 +5,6 @@ Version:	0.3
 Release:	4
 License:	GPL
 Group:		X11/Applications/Graphics
-Group(de):	X11/Applikationen/Grafik
-Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
