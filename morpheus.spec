@@ -16,9 +16,11 @@ BuildRequires:	gtk+-devel >= 1.2.6
 BuildRequires:	gtkglarea-devel >= 1.2.0
 BuildRequires:	libmorph-devel >= 0.1.2
 BuildRequires:	zlib-devel
+Requires:	OpenGL
 URL:		http://wine.sexcity.pl/morpheus/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define 	_noautoreqdep	libGL.so.1 libGLU.so.1
 %define		_prefix		/usr/X11R6
 
 %description
