@@ -2,9 +2,10 @@ Summary:	morpheus
 Summary(pl):	morpheus
 Name:		morpheus
 Version:	0.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Graphics
+Group(de):	X11/Applikationen/Grafik
 Group(pl):	X11/Aplikacje/Grafika
 Source0:	http://wine.sexcity.pl/%name/%{name}-%{version}.tar.gz
 BuildRequires:	gtk+-devel >= 1.2.6
@@ -20,19 +21,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_prefix		/usr/X11R6
 
 %description
-Morpheus is a mesh (3D model) viewer for GNOME desktop. It uses OpenGL as
-rendering API.
+Morpheus is a mesh (3D model) viewer for GNOME desktop. It uses OpenGL
+as rendering API.
 
 %description -l pl
-Morpheus jest przegl±dark± dla projektów 3D. Posiada support dla 3D Studio
-i LighWave.
+Morpheus jest przegl±dark± dla projektów 3D. Posiada support dla 3D
+Studio i LighWave.
 
 %prep
 %setup -q
 
 %build
 gettextize --copy --force
-LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--without-included-gettext 
 %{__make}
