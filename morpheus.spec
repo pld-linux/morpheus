@@ -1,5 +1,5 @@
 Summary:	Morpheus - a mesh (3D model) viewer for GNOME desktop
-Summary(pl):	Morpheus - przegl±darka dla projektów 3D
+Summary(pl.UTF-8):   Morpheus - przeglÄ…darka dla projektÃ³w 3D
 Name:		morpheus
 Version:	0.3
 Release:	7
@@ -31,12 +31,12 @@ Morpheus is a mesh (3D model) viewer for GNOME desktop. It uses OpenGL
 as rendering API. It supports 3D Studio and LightWave formats (via
 libmorph).
 
-%description -l pl
-Morpheus to przegl±darka siatek (modeli 3D) dla ¶rodowiska GNOME.
-U¿ywa OpenGL jako API do renderowania. Obs³uguje (poprzez libmorph)
+%description -l pl.UTF-8
+Morpheus to przeglÄ…darka siatek (modeli 3D) dla Å›rodowiska GNOME.
+UÅ¼ywa OpenGL jako API do renderowania. ObsÅ‚uguje (poprzez libmorph)
 formaty 3D Studio i LightWave.
 
-Morpheus jest przegl±dark± dla projektów 3D. Posiada support dla 3D
+Morpheus jest przeglÄ…darkÄ… dla projektÃ³w 3D. Posiada support dla 3D
 Studio i LightWave.
 
 %prep
