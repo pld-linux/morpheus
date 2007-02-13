@@ -1,5 +1,5 @@
 Summary:	Morpheus - a mesh (3D model) viewer for GNOME desktop
-Summary(pl.UTF-8):   Morpheus - przeglądarka dla projektów 3D
+Summary(pl.UTF-8):	Morpheus - przeglądarka dla projektów 3D
 Name:		morpheus
 Version:	0.3
 Release:	7
