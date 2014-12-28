@@ -14,7 +14,7 @@ BuildRequires:	ORBit-devel >= 0.5.0
 BuildRequires:	OpenGL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.6
 BuildRequires:	gtkglarea-devel >= 1.2.0
